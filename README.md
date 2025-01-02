@@ -36,10 +36,21 @@ Before deploying the application or infrastructure, make sure you have the follo
 
 ---
 
-## Task 1: Deploying SimpleTimeService on Kubernetes
-
-### Step 1: Clone the repository
+## Steps to deploy the application
 
 ```bash
+Task 1
 git clone https://github.com/yourusername/Particle41.git
 cd Particle41
+cd Task1
+docker build -t simple-time-service .
+kubectl apply -f microservice.yml
+
+Task 2
+git clone https://github.com/yourusername/Particle41.git
+cd Particle41
+cd Task2
+Terraform plan
+Terraform apply
+
+

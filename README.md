@@ -43,14 +43,15 @@ Task 1
 git clone https://github.com/yourusername/Particle41.git
 cd Particle41
 cd Task1
-docker build -t simple-time-service .
-kubectl apply -f microservice.yml
+kubectl apply -f deployment.yml
+kubectl apply -f service.yml
 
 Task 2
 git clone https://github.com/yourusername/Particle41.git
 cd Particle41
 cd Task2
-Terraform plan
-Terraform apply
+terraform init
+terraform plan
+terraform apply
 
 
